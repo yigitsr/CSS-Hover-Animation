@@ -14,6 +14,20 @@
 	<button class="btn btn-background-slide">Background Slide</button>
 	<button class="btn btn-background-circle">Background Circle</button>
 	<button class="btn btn-border-underline">Border Underline</button>
+	
+	<script>
+		const btnPop = document.getElementById('borderPop')
+
+		btnPop.addEventListener('click',() => {
+		  alert('test')
+
+		  navigator.clipboard.writeText(borderPop.innerText)
+		})
+
+
+		
+		
+	</script>
 </body>
 
 </html>
