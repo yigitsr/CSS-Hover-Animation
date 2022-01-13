@@ -1,4 +1,4 @@
-		const btnPop = document.getElementById('borderPop')
+	const btnPop = document.getElementById('borderPop')
         const btnSlide = document.getElementById('backSlide')
         const btnCircle = document.getElementById('backCircle')
         const btnUnder = document.getElementById('borderUnder')
@@ -30,16 +30,4 @@
         btnSand.addEventListener('click',() => {   
 
             navigator.clipboard.writeText(slidingCSS.innerText)
-        })
-
-        
-        // when click a button, copy the text to clipboard
-        // const btn = document.querySelectorAll('.btn')
-        // btn.forEach(btn => {
-        //     btn.addEventListener('click', () => {
-        //         navigator.clipboard.writeText(borderPop.innerText)
-        //         alert('test')
-        //     })
-        // })
-
-    	
+        }) 	
