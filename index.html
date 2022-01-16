@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
     <script src="script.js" defer></script>
     <title>CSS Animation</title>
 </head>
 <body>
 
+  <h2>Button Generator</h2>
 
-  <button class="btn btn-border-pop" id="borderPop">Border Pop</button>
-	<button class="btn btn-background-slide" id="backSlide">Background Slide</button>
-	<button class="btn btn-background-circle" id="backCircle">Background Circle</button>
-	<button class="btn btn-border-underline" id="borderUnder">Border Underline</button>
-  <button class="btn shadow-border-sliding-sand" id="slidingSand">Sliding Sand</button>
+  <!-- buttons  -->
+<div class="buttonContainer">
+  
+  <button class="btn btn-border-pop" id="borderPop">Button 1</button>
+	<button class="btn btn-background-slide" id="backSlide">Button 2</button>
+	<button class="btn btn-background-circle" id="backCircle">Button 3</button>
+	<button class="btn btn-border-underline" id="borderUnder">Button 4</button>
+  <button class="btn shadow-border-sliding-sand" id="slidingSand">Button 5</button>
+  <button class="btn btn-glow" id="glow">Button 6</button>
+  <button class="btn btn-double" id="double">Button 7</button>
+  <button class="btn btn-border" id="border">Button 8</button>
+  
+</div>
 
 
-    <button class="btn">Click</button>
 
-
+   <!-- css values of the buttons -->
     <p id="borderCSS">
       .btn.btn-border-pop::before {
         content: '';
@@ -176,6 +185,36 @@
         }
       </p>
 
+
+      <p id="glowCSS">
+        .btn.btn-glow:hover{
+          background:  var(--background-color);
+          box-shadow: 0 0 5px rgb(108, 50, 122), 0 0 10px rgb(108, 50, 122), 
+                      0 0 20px rgb(108, 50, 122), 0 0 50px rgb(108, 50, 122);
+    }
+      </p>
+
+      <p id="doubleCSS">
+        
+        .btn.btn-double:hover{
+          box-shadow: 10px 10px 0px rgb(108, 50, 122);
+          top: -3px;
+          left: -3px;
+        }
+      </p>
+
+
+      <p id="borderTwoCSS">
+        .btn.btn-border:hover{
+          border: 5px solid rgb(108, 50, 122);
+          color: rgb(108, 50, 122);
+          background-color: #8a8a96;
+    }
+      </p>
+
+
+
+
+
 </body>
 </html>
-

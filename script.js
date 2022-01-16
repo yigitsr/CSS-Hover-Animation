@@ -1,9 +1,19 @@
-	const btnPop = document.getElementById('borderPop')
+        // buttons
+        const btnPop = document.getElementById('borderPop')
         const btnSlide = document.getElementById('backSlide')
         const btnCircle = document.getElementById('backCircle')
         const btnUnder = document.getElementById('borderUnder')
         const btnSand = document.getElementById('slidingSand')
+        const btnGlow = document.getElementById('glow')
+        const btnDouble = document.getElementById('double')
+        const btnBorder = document.getElementById('border')
 
+
+
+
+
+
+        // p tags when click on the buttons
 		btnPop.addEventListener('click',() => {
 
 		  navigator.clipboard.writeText(borderCSS.innerText)
@@ -30,4 +40,27 @@
         btnSand.addEventListener('click',() => {   
 
             navigator.clipboard.writeText(slidingCSS.innerText)
-        }) 	
+        })
+
+        
+        btnGlow.addEventListener('click',() => {   
+
+          navigator.clipboard.writeText(glowCSS.innerText)
+      })
+
+
+      btnDouble.addEventListener('click',() => {   
+
+        navigator.clipboard.writeText(doubleCSS.innerText)
+    })
+
+
+    btnBorder.addEventListener('click',() => {   
+
+      navigator.clipboard.writeText(borderTwoCSS.innerText)
+  })
+
+
+  
+
+    
