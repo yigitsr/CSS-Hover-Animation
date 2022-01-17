@@ -7,6 +7,7 @@
         const btnGlow = document.getElementById('glow')
         const btnDouble = document.getElementById('double')
         const btnBorder = document.getElementById('border')
+        const btnFill = document.getElementById('fill')
 
 
 
@@ -61,6 +62,12 @@
   })
 
 
-  
+  btnFill.addEventListener('click',() => {   
+
+    navigator.clipboard.writeText(fillCSS.innerText)
+})
+
+
+
 
     

@@ -12,20 +12,25 @@
 <body>
 
   <h2>Button Generator</h2>
+  <h3>Click the buttons to copy the css hover animation</h3>
+
+
 
   <!-- buttons  -->
 <div class="buttonContainer">
   
-  <button class="btn btn-border-pop" id="borderPop">Button 1</button>
-	<button class="btn btn-background-slide" id="backSlide">Button 2</button>
-	<button class="btn btn-background-circle" id="backCircle">Button 3</button>
-	<button class="btn btn-border-underline" id="borderUnder">Button 4</button>
-  <button class="btn shadow-border-sliding-sand" id="slidingSand">Button 5</button>
-  <button class="btn btn-glow" id="glow">Button 6</button>
-  <button class="btn btn-double" id="double">Button 7</button>
-  <button class="btn btn-border" id="border">Button 8</button>
-  
+  <button class="btn btn-border-pop" id="borderPop">Click</button>
+	<button class="btn btn-background-slide" id="backSlide">Click</button>
+	<button class="btn btn-background-circle" id="backCircle">Click</button>
+	<button class="btn btn-border-underline" id="borderUnder">Click</button>
+  <button class="btn shadow-border-sliding-sand" id="slidingSand">Click</button>
+  <button class="btn btn-glow" id="glow">Click</button>
+  <button class="btn btn-double" id="double">Click</button>
+  <button class="btn btn-border" id="border">Click</button>
+  <button class="btn btn-fill" id="fill">Click</button>
+ 
 </div>
+
 
 
 
@@ -213,6 +218,41 @@
       </p>
 
 
+      <p id="fillCSS">
+        .btn.btn-fill{
+
+          position: relative;
+        }
+        
+        .btn.btn-fill span{
+            position: relative;
+            border-radius: 12px;
+        
+          }
+          
+          .btn.btn-fill::before{
+            content: "";
+            position: absolute;
+            left: -0.1px;
+            right: -0.1px;
+            bottom: 0;
+            height: 100%;
+            transform: scaleY(.2);
+            transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
+            transform-origin: bottom;
+            background-color: var(--accent-color);
+            opacity: 0.5;
+            border-radius: 12px;
+          }
+        
+          .btn.btn-fill:hover::before{
+            transform: scaleY(1);
+            border-radius: 12px;
+        
+          }
+          
+        
+      </p>
 
 
 

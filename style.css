@@ -5,7 +5,7 @@
   body {
   margin: 0;
   padding: 0;
-    background-color: rgb(87, 87, 88);
+    background-color: rgb(19, 21, 22);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +15,14 @@
   h2{
     text-align: center;
     margin-top: 2em;
-    color: rgb(55, 11, 59);
+    color: #4FBDBA;
    
+  }
+
+  h3{
+    margin-top: .3em;
+    color: rgb(177, 166, 166);
+
   }
 
   p{
