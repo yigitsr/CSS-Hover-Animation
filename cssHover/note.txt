@@ -1,0 +1,3 @@
+CSS Hover Animation Web App
+
+Do the styling with sass, put css inside p tags for copying
